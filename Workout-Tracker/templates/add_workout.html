@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/add_workout.css">
+    <title>Add Workout</title>
+</head>
+<body> 
+        <h1>Add a New Workout</h1>
+        <form action="/add_workout" method="POST">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="type">Workout Type:</label>
+            <select id="type" name="type" required>
+                <option value="Running">Running</option>
+                <option value="Push-Ups">Push-Ups</option>
+                <option value="Yoga">Yoga</option>
+                <option value="Weight-Lifting">Weight-Lifting</option>
+            </select>
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" name="duration" required>
+            <button class="btn">Add Workout</button>
+        </form>
+        <a class="fas fa-arrow" href="/">Back to Home</a>
+</body>
+</html>
